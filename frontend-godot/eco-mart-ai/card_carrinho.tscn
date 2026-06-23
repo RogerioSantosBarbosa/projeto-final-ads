@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bm144l5uxkv4j"]
+
+[ext_resource type="Script" uid="uid://bacmqhie5vmkm" path="res://card_carrinho.gd" id="1_irjxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irjxv"]
+
+[node name="CardCarrinho" type="PanelContainer" unique_id=2076581393]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_irjxv")
+script = ExtResource("1_irjxv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=289580340]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="LabelNome" type="Label" parent="HBoxContainer" unique_id=167547986]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="LabelPreco" type="Label" parent="HBoxContainer" unique_id=829016064]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="BtnMenos" type="Button" parent="HBoxContainer" unique_id=1657895855]
+layout_mode = 2
+text = "-"
+
+[node name="LabelQtd" type="Label" parent="HBoxContainer" unique_id=1194326947]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="BtnMais" type="Button" parent="HBoxContainer" unique_id=1408334395]
+layout_mode = 2
+text = "+"

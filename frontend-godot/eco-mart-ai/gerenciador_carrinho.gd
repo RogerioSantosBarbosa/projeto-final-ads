@@ -27,3 +27,18 @@ func obter_total_itens() -> int:
 	for item in itens_no_carrinho:
 		total += item["quantidade"]
 	return total
+	
+# Altera a quantidade de um item (+1 ou -1). Se chegar a 0, deleta o item!
+func modificar_quantidade(nome_produto: String, delta: int):
+	for i in range(itens_no_carrinho.size()):
+		if itens_no_carrinho[i]["nome"] == nome_produto:
+			itens_no_carrinho[i]["quantidade"] += delta
+			
+			# Se a quantidade for 0 ou menos, remove o item do CRUD
+			if itens_no_carrinho[i]["quantidade"] <= 0:
+				itens_no_carrinho.remove_at(i)
+			break
+
+# Limpa o carrinho por completo
+func limpar_todo_o_carrinho():
+	itens_no_carrinho.clear()
