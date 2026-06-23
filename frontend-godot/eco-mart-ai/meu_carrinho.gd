@@ -25,14 +25,18 @@ func exibir_itens_do_carrinho():
 	for filho in lista_cards.get_children():
 		filho.queue_free()
 		
-	# Se o carrinho estiver vazio, esconde botões e o total
+	# Se o carrinho estiver vazio, esconde/desativa os botões e o total
 	if GerenciadorCarrinho.itens_no_carrinho.size() == 0:
 		btn_limpar.disabled = true
 		btn_limpar.visible = false
+		btn_finalizar.disabled = true   # <-- Trava o botão de finalizar
+		btn_finalizar.visible = false   # <-- Esconde o botão de finalizar
 		lbl_total.visible = false
 	else:
 		btn_limpar.disabled = false
 		btn_limpar.visible = true
+		btn_finalizar.disabled = false  # <-- Destrava o botão
+		btn_finalizar.visible = true    # <-- Mostra o botão
 		lbl_total.visible = true
 		
 	# Cria os novos cards atualizados
@@ -57,8 +61,9 @@ func _on_btn_limpar_pressed():
 	exibir_itens_do_carrinho() # Atualiza a tela para apagar os cards visualmente
 
 func _on_btn_finalizar_pressed():
+	# Pede para o gerenciador disparar a requisição pro Java
 	GerenciadorCarrinho.finalizar_compra()
 	print("Enviando pedido para o servidor...")
 	
-	await get_tree().create_timer(1.5).timeout
-	get_tree().change_scene_to_file("res://tela_inicial.tscn")
+	# Em vez de voltar pra tela inicial, vamos para a tela de Sucesso!
+	get_tree().change_scene_to_file("res://tela_sucesso.tscn")

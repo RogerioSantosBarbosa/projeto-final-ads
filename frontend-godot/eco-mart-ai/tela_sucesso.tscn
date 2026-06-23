@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bp42bac8vo4pu"]
+
+[ext_resource type="Script" uid="uid://pmdifcea1llt" path="res://tela_sucesso.gd" id="1_7i3sp"]
+
+[sub_resource type="Theme" id="Theme_4si8p"]
+
+[node name="TelaSucesso" type="Control" unique_id=565321835]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_4si8p")
+script = ExtResource("1_7i3sp")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=852569574]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5058824, 0.78039217, 0.5176471, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1042799259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Compra Finalizada com Sucesso!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
