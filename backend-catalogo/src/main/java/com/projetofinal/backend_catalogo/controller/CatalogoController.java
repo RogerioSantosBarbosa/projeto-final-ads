@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.Optional;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 @Tag(
     name = "Catálogo de Produtos",
     description = "Operações relacionadas aos produtos do supermercado"
