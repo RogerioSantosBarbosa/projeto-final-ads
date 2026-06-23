@@ -14,6 +14,7 @@ import java.util.List;
     description = "API responsável pelo gerenciamento de pedidos do sistema de e-commerce"
 )
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/pedidos")
 public class PedidoController {
 
