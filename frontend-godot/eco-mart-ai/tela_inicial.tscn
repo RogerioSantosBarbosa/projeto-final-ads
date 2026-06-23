@@ -634,3 +634,7 @@ layout_mode = 2
 texture_normal = ExtResource("17_l20d4")
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="RequisicaoCatalogo" type="HTTPRequest" parent="." unique_id=1489470062]
+
+[connection signal="request_completed" from="RequisicaoCatalogo" to="." method="_on_requisicao_catalogo_request_completed"]

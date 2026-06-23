@@ -1,44 +1,54 @@
 extends Node
 
-# Esta lista (Array) vai guardar os dicionários com os dados de cada produto
 var itens_no_carrinho = []
+var requisicao_pedido : HTTPRequest
+
+func _ready():
+	# Cria o nó de requisição invisível via código
+	requisicao_pedido = HTTPRequest.new()
+	add_child(requisicao_pedido)
+	requisicao_pedido.request_completed.connect(_on_pedido_enviado)
 
 func adicionar_produto(nome_produto, preco_produto):
-	# Primeiro, checa se o produto já está no carrinho para apenas aumentar a quantidade
 	for item in itens_no_carrinho:
 		if item["nome"] == nome_produto:
 			item["quantidade"] += 1
-			print("Quantidade aumentada: ", nome_produto)
 			return
-			
-	# Se não estava no carrinho, cria um novo registro
+
 	var novo_item = {
 		"nome": nome_produto,
 		"preco": preco_produto,
 		"quantidade": 1
 	}
 	itens_no_carrinho.append(novo_item)
-	print("Novo produto adicionado: ", nome_produto)
-	print("Total de itens no carrinho: ", itens_no_carrinho.size())
-	
-	
+
 func obter_total_itens() -> int:
 	var total = 0
 	for item in itens_no_carrinho:
 		total += item["quantidade"]
 	return total
-	
-# Altera a quantidade de um item (+1 ou -1). Se chegar a 0, deleta o item!
-func modificar_quantidade(nome_produto: String, delta: int):
-	for i in range(itens_no_carrinho.size()):
-		if itens_no_carrinho[i]["nome"] == nome_produto:
-			itens_no_carrinho[i]["quantidade"] += delta
-			
-			# Se a quantidade for 0 ou menos, remove o item do CRUD
-			if itens_no_carrinho[i]["quantidade"] <= 0:
-				itens_no_carrinho.remove_at(i)
-			break
 
-# Limpa o carrinho por completo
-func limpar_todo_o_carrinho():
-	itens_no_carrinho.clear()
+# --- INTEGRAÇÃO COM O BACKEND DE PEDIDOS ---
+func finalizar_compra():
+	if itens_no_carrinho.is_empty():
+		print("Carrinho vazio!")
+		return
+
+	# Monta o JSON no exato formato que o Spring Boot espera
+	var dados_pedido = JSON.stringify({
+		"itens": itens_no_carrinho
+	})
+
+	var headers = ["Content-Type: application/json"]
+	var url = "http://localhost:8082/pedidos"
+
+	# Dispara o POST para o microsserviço de Pedidos
+	requisicao_pedido.request(url, headers, HTTPClient.METHOD_POST, dados_pedido)
+
+func _on_pedido_enviado(result, response_code, headers, body):
+	# O Spring Boot geralmente retorna 200 (OK) ou 201 (Created)
+	if response_code == 200 or response_code == 201:
+		print("Pedido finalizado com sucesso! RabbitMQ foi acionado pelo Java.")
+		itens_no_carrinho.clear() # Esvazia o carrinho no app
+	else:
+		print("Erro ao processar o pedido. Código do erro: ", response_code)
