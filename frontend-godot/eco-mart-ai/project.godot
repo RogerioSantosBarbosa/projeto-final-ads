@@ -11,8 +11,21 @@ config_version=5
 [application]
 
 config/name="EcoMartAI"
+run/main_scene="uid://cbsoy146qp1su"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://c6kr2l44i0aj4"
+GerenciadorCarrinho="*uid://cgicf87juxq5x"
+
+[display]
+
+window/size/viewport_width=360
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [physics]
 

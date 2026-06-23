@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://cv4gkyvnreq03"]
+
+[ext_resource type="Script" uid="uid://cs0cf32g8dm25" path="res://meu_carrinho.gd" id="1_bvy3e"]
+[ext_resource type="Texture2D" uid="uid://i8w04cmeth1w" path="res://icon/seta-esquerda.png" id="1_ntvou"]
+[ext_resource type="Texture2D" uid="uid://cbllrmoh0jj8l" path="res://icon/carrinho.png" id="2_bvy3e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0mh1s"]
+content_margin_left = 20.0
+content_margin_top = 40.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.5058824, 0.78039217, 0.5176471, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfxnr"]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.124256186, 0.23438317, 0.13025841, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="MeuCarrinho" type="Control" unique_id=1774701147]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bvy3e")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1516657823]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.95070344, 0.9507033, 0.9507033, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1525829230]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1331752435]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0mh1s")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer" unique_id=1134524589]
+layout_mode = 2
+
+[node name="Voltar" type="TextureButton" parent="VBoxContainer/PanelContainer/HBoxContainer" unique_id=570319819]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("1_ntvou")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/HBoxContainer" unique_id=1613870939]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Meu Carrinho"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/PanelContainer/HBoxContainer" unique_id=482226975]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_bvy3e")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=497787250]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer" unique_id=1129810664]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.20942885, 0.20942888, 0.20942888, 1)
+theme_override_font_sizes/font_size = 20
+text = "Produtos"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=1378254913]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer" unique_id=1469053466]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="ListaCards" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/MarginContainer" unique_id=1052940479]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=817501784]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Button" type="Button" parent="VBoxContainer/MarginContainer2" unique_id=265460222]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_pfxnr")
+text = "Finalizar Compra"

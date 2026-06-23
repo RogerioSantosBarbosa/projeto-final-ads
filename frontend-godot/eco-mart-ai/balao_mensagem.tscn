@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cs4d7n4wsuvme"]
+
+[ext_resource type="Script" uid="uid://ba4nkdso6umk6" path="res://balao_mensagem.gd" id="1_jfgic"]
+
+[node name="BalaoMensagem" type="MarginContainer" unique_id=40963942]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jfgic")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=63197937]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=350605083]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer" unique_id=211145145]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+autowrap_mode = 2

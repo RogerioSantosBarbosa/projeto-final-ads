@@ -1,0 +1,636 @@
+[gd_scene format=3 uid="uid://cbsoy146qp1su"]
+
+[ext_resource type="Script" uid="uid://dwnyx5bog05k" path="res://tela_inicial.gd" id="1_gbv30"]
+[ext_resource type="Texture2D" uid="uid://cbllrmoh0jj8l" path="res://icon/carrinho.png" id="1_qtomq"]
+[ext_resource type="Texture2D" uid="uid://mvxdcid2phm1" path="res://images/hortifruti.png" id="2_g50o1"]
+[ext_resource type="Texture2D" uid="uid://swqnajbim6yx" path="res://images/carnes.png" id="3_ek0m7"]
+[ext_resource type="Texture2D" uid="uid://dhyttmiq5f071" path="res://images/laticinios.png" id="4_hftsj"]
+[ext_resource type="Texture2D" uid="uid://o4tavar4vf06" path="res://images/mercearia.png" id="5_sbn3v"]
+[ext_resource type="Texture2D" uid="uid://dohjblgu024tq" path="res://images/bebidas.png" id="6_gsqm0"]
+[ext_resource type="Texture2D" uid="uid://bnjidrvumitrr" path="res://images/carne-moida.png" id="7_k1kmp"]
+[ext_resource type="Texture2D" uid="uid://cuxsjwil8f7dw" path="res://images/banana.png" id="8_pklsx"]
+[ext_resource type="Texture2D" uid="uid://bm081m05832tu" path="res://images/ovos.png" id="9_j4ai6"]
+[ext_resource type="Texture2D" uid="uid://cwyivl1f1cd5q" path="res://images/macarrao.png" id="10_bk28v"]
+[ext_resource type="Texture2D" uid="uid://2nkeqp43pg0s" path="res://images/azeite.png" id="11_3n66v"]
+[ext_resource type="Texture2D" uid="uid://b780ybkfssdwe" path="res://images/coca-zero.png" id="12_6o6p2"]
+[ext_resource type="Texture2D" uid="uid://gfdcq6v3k0jg" path="res://images/requeijao.png" id="13_0n5s6"]
+[ext_resource type="Texture2D" uid="uid://wqsw6rmeo1j" path="res://images/frango-cru.png" id="14_gbv30"]
+[ext_resource type="Texture2D" uid="uid://dpterw1c8e300" path="res://icon/botao-de-inicio.png" id="15_0n5s6"]
+[ext_resource type="Texture2D" uid="uid://bjw344v42j8ci" path="res://icon/lupa.png" id="15_hybhv"]
+[ext_resource type="Texture2D" uid="uid://c2b6mqcp28xds" path="res://icon/carrinho-de-compras.png" id="16_bp1yd"]
+[ext_resource type="Texture2D" uid="uid://bhw8ovcyxcnv0" path="res://icon/chat-de-voz.png" id="17_gbv30"]
+[ext_resource type="Texture2D" uid="uid://fffsb8dtmej4" path="res://icon/user.png" id="17_l20d4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g50o1"]
+content_margin_left = 20.0
+content_margin_top = 40.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.5058824, 0.78039217, 0.5176471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bm7t"]
+content_margin_left = 10.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gbv30"]
+bg_color = Color(0.9999998, 0.35769802, 0.029846841, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w63eu"]
+bg_color = Color(1, 1, 1, 1)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5058824, 0.78039217, 0.5176471, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7piu"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tgnqs"]
+bg_color = Color(0.5058824, 0.78039217, 0.2784314, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sf1es"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+
+[node name="TelaInicial" type="Control" unique_id=1693085070]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_gbv30")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1979502826]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.95070344, 0.9507033, 0.9507033, 1)
+
+[node name="ContainerPrincipal" type="VBoxContainer" parent="." unique_id=1779344976]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="ContainerPrincipal" unique_id=525059268]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g50o1")
+
+[node name="Cabecalho" type="HBoxContainer" parent="ContainerPrincipal/PanelContainer" unique_id=848688147]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="LineEdit" type="LineEdit" parent="ContainerPrincipal/PanelContainer/Cabecalho" unique_id=1516078851]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.17785326, 0.17785358, 0.17785329, 1)
+theme_override_colors/font_placeholder_color = Color(0.24405172, 0.24405226, 0.24405184, 0.6)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8bm7t")
+placeholder_text = "Busque um item..."
+
+[node name="TextureButton" type="TextureButton" parent="ContainerPrincipal/PanelContainer/Cabecalho" unique_id=316710850]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture_normal = ExtResource("1_qtomq")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Contador" type="Label" parent="ContainerPrincipal/PanelContainer/Cabecalho/TextureButton" unique_id=937918418]
+layout_mode = 0
+offset_left = 27.0
+offset_top = -6.0
+offset_right = 45.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_gbv30")
+text = "30"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollCategorias" type="ScrollContainer" parent="ContainerPrincipal" unique_id=706914953]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="ContainerPrincipal/ScrollCategorias" unique_id=581486896]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+
+[node name="ListaCategorias" type="HBoxContainer" parent="ContainerPrincipal/ScrollCategorias/MarginContainer" unique_id=182777559]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="BotaoHortifruti" type="Button" parent="ContainerPrincipal/ScrollCategorias/MarginContainer/ListaCategorias" unique_id=1128891700]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18932745, 0.18932799, 0.18932763, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_w63eu")
+text = "Hortifruti"
+icon = ExtResource("2_g50o1")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="BotaoCarnes" type="Button" parent="ContainerPrincipal/ScrollCategorias/MarginContainer/ListaCategorias" unique_id=1899729983]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18932745, 0.18932799, 0.18932763, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_w63eu")
+text = "Carnes"
+icon = ExtResource("3_ek0m7")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="BotaoLaticínios" type="Button" parent="ContainerPrincipal/ScrollCategorias/MarginContainer/ListaCategorias" unique_id=1119722008]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18932745, 0.18932799, 0.18932763, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_w63eu")
+text = "Laticínios"
+icon = ExtResource("4_hftsj")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="BotaoMercearia" type="Button" parent="ContainerPrincipal/ScrollCategorias/MarginContainer/ListaCategorias" unique_id=1328617871]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18932745, 0.18932799, 0.18932763, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_w63eu")
+text = "Mercearia"
+icon = ExtResource("5_sbn3v")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="BotaoBebidas" type="Button" parent="ContainerPrincipal/ScrollCategorias/MarginContainer/ListaCategorias" unique_id=1054042745]
+custom_minimum_size = Vector2(100, 110)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18932745, 0.18932799, 0.18932763, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_w63eu")
+text = "Bebidas"
+icon = ExtResource("6_gsqm0")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="TituloRecomendacoes" type="Label" parent="ContainerPrincipal" unique_id=640423373]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.16141722, 0, 1)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_font_sizes/font_size = 18
+text = "    Recomendações para você"
+
+[node name="Recomendações" type="MarginContainer" parent="ContainerPrincipal" unique_id=912958602]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ContainerPrincipal/Recomendações" unique_id=2098371483]
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="ListaProdutos" type="HBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer" unique_id=335453287]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="CarProduto" type="PanelContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos" unique_id=36540663]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto" unique_id=311953851]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer" unique_id=1594933939]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=1042568759]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("7_k1kmp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=658291949]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Carne Moída"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=449173180]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 38,90"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=1602367544]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto2" type="PanelContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos" unique_id=2070978292]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2" unique_id=1875295985]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer" unique_id=593257157]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=1176792308]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("8_pklsx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=959152407]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Banana"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=1459111807]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 7,90"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=826905296]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto3" type="PanelContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos" unique_id=1290866686]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3" unique_id=1740517772]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer" unique_id=1341496007]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=719879478]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("9_j4ai6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=2134984611]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Ovos"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=2045479048]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 21.99"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=1689683529]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto4" type="PanelContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos" unique_id=990568124]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4" unique_id=367395154]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer" unique_id=2145772650]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=1921810626]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("10_bk28v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=216087393]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Macarrão Renata"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=1670028071]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 5,50"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Recomendações/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=1951831779]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="TituloNovidades" type="Label" parent="ContainerPrincipal" unique_id=1195509519]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.16141722, 0, 1)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_font_sizes/font_size = 18
+text = "    Novidades"
+
+[node name="Novidades" type="MarginContainer" parent="ContainerPrincipal" unique_id=1614506175]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ContainerPrincipal/Novidades" unique_id=112697843]
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="ListaProdutos" type="HBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer" unique_id=622292732]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="CarProduto" type="PanelContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos" unique_id=1631895004]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto" unique_id=1596567411]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer" unique_id=1774349094]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=1083832066]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("11_3n66v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=825378844]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Azeite Gallo"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=67951263]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 29,99"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto/VBoxContainer/GrupoTextos" unique_id=1670820672]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto2" type="PanelContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos" unique_id=1511825136]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2" unique_id=230187930]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer" unique_id=2005239630]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=635126717]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("12_6o6p2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=66386353]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Coca-Cola Zero"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=1226434004]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 8.70"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto2/VBoxContainer/GrupoTextos" unique_id=1232651071]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto3" type="PanelContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos" unique_id=1859203290]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3" unique_id=909325742]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer" unique_id=2076864224]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=469923529]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("13_0n5s6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=1286586932]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Requeijão"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=1264956450]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 6,50"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto3/VBoxContainer/GrupoTextos" unique_id=1588382423]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="CarProduto4" type="PanelContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos" unique_id=1787755532]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t7piu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4" unique_id=40649035]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="GrupoTextos" type="VBoxContainer" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer" unique_id=914942486]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Imagem" type="TextureRect" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=554990241]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = ExtResource("14_gbv30")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Título" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=1675337085]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16062862, 0.16062862, 0.16062862, 1)
+text = "Peito de Frango"
+horizontal_alignment = 1
+
+[node name="Preço" type="Label" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=515729598]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.28193083, 0.4820618, 0.29246885, 1)
+theme_override_font_sizes/font_size = 14
+text = "R$ 22,70"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ContainerPrincipal/Novidades/ScrollContainer/ListaProdutos/CarProduto4/VBoxContainer/GrupoTextos" unique_id=1504974849]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tgnqs")
+text = "Adicionar"
+
+[node name="MenuInferior" type="PanelContainer" parent="." unique_id=426246437]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sf1es")
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuInferior" unique_id=1951312511]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuInferior/MarginContainer" unique_id=104907434]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Home" type="TextureButton" parent="MenuInferior/MarginContainer/HBoxContainer" unique_id=966122557]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("15_0n5s6")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Pesquisar" type="TextureButton" parent="MenuInferior/MarginContainer/HBoxContainer" unique_id=1485538226]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("15_hybhv")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="IA" type="TextureButton" parent="MenuInferior/MarginContainer/HBoxContainer" unique_id=922557549]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("17_gbv30")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Carrinho" type="TextureButton" parent="MenuInferior/MarginContainer/HBoxContainer" unique_id=1411853420]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("16_bp1yd")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Perfil" type="TextureButton" parent="MenuInferior/MarginContainer/HBoxContainer" unique_id=1708358125]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("17_l20d4")
+ignore_texture_size = true
+stretch_mode = 5
