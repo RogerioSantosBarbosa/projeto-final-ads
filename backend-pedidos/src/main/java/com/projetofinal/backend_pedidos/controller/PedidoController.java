@@ -4,6 +4,7 @@ import com.projetofinal.backend_pedidos.model.Pedido;
 import com.projetofinal.backend_pedidos.service.PedidoService;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
