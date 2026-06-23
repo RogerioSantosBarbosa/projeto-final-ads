@@ -107,6 +107,19 @@ theme_override_constants/margin_bottom = 15
 layout_mode = 2
 theme_override_constants/separation = 15
 
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer" unique_id=609724286]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="LabelTotal" type="Label" parent="VBoxContainer/MarginContainer4" unique_id=283603302]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.74, 0.35840666, 0.06659998, 1)
+theme_override_font_sizes/font_size = 18
+text = "Total: R$ 0,00"
+horizontal_alignment = 2
+
 [node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=1184952828]
 layout_mode = 2
 theme_override_constants/margin_left = 20

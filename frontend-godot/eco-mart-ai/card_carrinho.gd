@@ -1,6 +1,6 @@
 extends PanelContainer
 
-# Criamos um sinal para avisar a tela principal que o carrinho mudou
+# Sinal para avisar a tela principal do carrinho que o valor mudou
 signal quantidade_alterada
 
 @onready var lbl_nome = $HBoxContainer/LabelNome
@@ -12,9 +12,9 @@ signal quantidade_alterada
 var nome_produto: String = ""
 
 func _ready():
-	# Conecta os cliques dos botões internos
-	btn_menos.pressed.connect(_on_btn_menos_pressed)
-	btn_mais.pressed.connect(_on_btn_mais_pressed)
+	# Garante que os botões internos de somar e subtrair funcionam
+	if btn_menos: btn_menos.pressed.connect(_on_btn_menos_pressed)
+	if btn_mais: btn_mais.pressed.connect(_on_btn_mais_pressed)
 
 func configurar(nome: String, preco: float, quantidade: int):
 	nome_produto = nome
@@ -24,8 +24,8 @@ func configurar(nome: String, preco: float, quantidade: int):
 
 func _on_btn_menos_pressed():
 	GerenciadorCarrinho.modificar_quantidade(nome_produto, -1)
-	quantidade_alterada.emit() # Avisa a tela do carrinho para atualizar
+	quantidade_alterada.emit() # Recarrega a tela de carrinho
 
 func _on_btn_mais_pressed():
 	GerenciadorCarrinho.modificar_quantidade(nome_produto, 1)
-	quantidade_alterada.emit() # Avisa a tela do carrinho para atualizar
+	quantidade_alterada.emit() # Recarrega a tela de carrinho
